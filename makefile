@@ -47,7 +47,7 @@ run_test: $(TEST_TARGET)
 deploy: 
 	git add --all
 	git commit -m "Commit by makefile, into new repository for correct usage of github"
-	git push 
+	git push -f origin main
 
 doc :
 	$(DOXYGEN)
