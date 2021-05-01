@@ -45,9 +45,9 @@ run_test: $(TEST_TARGET)
 	$(TEST_TARGET) >> $(TEST_OUT) && $(TEST_TARGET)
 
 deploy: 
-	git add --all
-	git commit -m "Commit by makefile, into new repository for correct usage of github"
-	git push -f origin main
+	git add .
+	git commit -m "Added more tests / updated VideoGame class"
+	git push origin main
 
 doc :
 	$(DOXYGEN)
@@ -60,8 +60,8 @@ clean :
 	$(RM) $(TARGET)
 	$(RM) $(TEST_TARGET)
 	$(RM) $(TEST_OUT)
-	$(RM) $(DOCS)
-	$(RM) $(DOCS_HTML)
-	$(RM) $(DOCS_HTML_SEARCH)
+	$(RM) /Q $(DOCS)
+	$(RM) /Q $(DOCS_HTML)
+	$(RM) /Q $(DOCS_HTML_SEARCH)
 
 .PHONY : all doc rebuild build_test run_test clean deploy 

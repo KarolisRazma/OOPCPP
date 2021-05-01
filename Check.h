@@ -14,6 +14,8 @@ using std::string;
 #define INVALID_GENRE "Wrong genre!"
 #define INVALID_YEAR "Wrong release year!"
 #define INVALID_MULTIPLAYER "Wrong multiplayer value!"
+#define INVALID_PRICE "Price can't be negative!"
+#define INVALID_SYMBOL "Symbol must be '+' or '-' only!"
 
 // logic_error messages
 #define NO_INIT "Object is not initialized!"

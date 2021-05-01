@@ -67,6 +67,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_game_1_1_video_game-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -85,13 +86,16 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_1_1_video_game.html#a42e5723d8df3fae09b0ef539ac68c286">VideoGame</a> ()</td></tr>
 <tr class="memdesc:a42e5723d8df3fae09b0ef539ac68c286"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lazy initialization of the <a class="el" href="class_game_1_1_video_game.html" title="This class stores data about video games. VideoGame consists of these fields: name,...">VideoGame</a>. <br /></td></tr>
 <tr class="separator:a42e5723d8df3fae09b0ef539ac68c286"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a355098f4a760daf2ef1c38975c9866e7"><td class="memItemLeft" align="right" valign="top"><a id="a355098f4a760daf2ef1c38975c9866e7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>VideoGame</b> (const string &amp;n, const string &amp;g, unsigned int rYear, bool isMultiP)</td></tr>
-<tr class="separator:a355098f4a760daf2ef1c38975c9866e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff1fd93a658fbffa2f2c44b0e6a71d03"><td class="memItemLeft" align="right" valign="top"><a id="aff1fd93a658fbffa2f2c44b0e6a71d03"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_1_1_video_game.html#aff1fd93a658fbffa2f2c44b0e6a71d03">setGame</a> (const string &amp;n, const string &amp;g, unsigned int rYear, bool isMultiP)</td></tr>
-<tr class="memdesc:aff1fd93a658fbffa2f2c44b0e6a71d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will set all video game data with given parametres. <br /></td></tr>
-<tr class="separator:aff1fd93a658fbffa2f2c44b0e6a71d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6759c3f72dc4c7deb99c23117794c9a"><td class="memItemLeft" align="right" valign="top"><a id="ae6759c3f72dc4c7deb99c23117794c9a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>VideoGame</b> (const string &amp;n, const string &amp;g, unsigned int rYear, bool isMultiP, double price)</td></tr>
+<tr class="separator:ae6759c3f72dc4c7deb99c23117794c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d55c837a941cac5dfce2fa7ba8bf1fa"><td class="memItemLeft" align="right" valign="top"><a id="a4d55c837a941cac5dfce2fa7ba8bf1fa"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>VideoGame</b> (const <a class="el" href="class_game_1_1_video_game.html">VideoGame</a> &amp;game)</td></tr>
+<tr class="separator:a4d55c837a941cac5dfce2fa7ba8bf1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad3f172c5ad16c07f7904b1e78f0593"><td class="memItemLeft" align="right" valign="top"><a id="a5ad3f172c5ad16c07f7904b1e78f0593"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_1_1_video_game.html#a5ad3f172c5ad16c07f7904b1e78f0593">setGame</a> (const string &amp;n, const string &amp;g, unsigned int rYear, bool isMultiP, double price)</td></tr>
+<tr class="memdesc:a5ad3f172c5ad16c07f7904b1e78f0593"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will set all video game data with given parametres. <br /></td></tr>
+<tr class="separator:a5ad3f172c5ad16c07f7904b1e78f0593"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15930efc8cbea66830fd781bbccde4fd"><td class="memItemLeft" align="right" valign="top"><a id="a15930efc8cbea66830fd781bbccde4fd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setName</b> (const string &amp;nameOfGame)</td></tr>
 <tr class="separator:a15930efc8cbea66830fd781bbccde4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,6 +108,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setReleaseYear</b> (u
 <tr class="memitem:a5c3150f418a45761289929aba0792d7c"><td class="memItemLeft" align="right" valign="top"><a id="a5c3150f418a45761289929aba0792d7c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setMultiplayer</b> (bool isOnline)</td></tr>
 <tr class="separator:a5c3150f418a45761289929aba0792d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102325c7fc989e2dab2f4d4c728399f7"><td class="memItemLeft" align="right" valign="top"><a id="a102325c7fc989e2dab2f4d4c728399f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPrice</b> (double price)</td></tr>
+<tr class="separator:a102325c7fc989e2dab2f4d4c728399f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a438a398589eee2f8dcc78fcfbdf6fda4"><td class="memItemLeft" align="right" valign="top"><a id="a438a398589eee2f8dcc78fcfbdf6fda4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setGameID</b> ()</td></tr>
 <tr class="separator:a438a398589eee2f8dcc78fcfbdf6fda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,9 +129,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>getIsMultiplayer</b> 
 <tr class="memitem:a0a1761527e21919f9b37b43634d2288e"><td class="memItemLeft" align="right" valign="top"><a id="a0a1761527e21919f9b37b43634d2288e"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>getID</b> () const</td></tr>
 <tr class="separator:a0a1761527e21919f9b37b43634d2288e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5fca3ac2cbac52f2e46901ebd11c5bb"><td class="memItemLeft" align="right" valign="top"><a id="ae5fca3ac2cbac52f2e46901ebd11c5bb"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>getPrice</b> () const</td></tr>
+<tr class="separator:ae5fca3ac2cbac52f2e46901ebd11c5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea563a128919a59987d9ca992772adbf"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_1_1_video_game.html#aea563a128919a59987d9ca992772adbf">toString</a> () const</td></tr>
 <tr class="memdesc:aea563a128919a59987d9ca992772adbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns class object data converted into string.  <a href="class_game_1_1_video_game.html#aea563a128919a59987d9ca992772adbf">More...</a><br /></td></tr>
 <tr class="separator:aea563a128919a59987d9ca992772adbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb5730513afbd992a42f084649f7b55"><td class="memItemLeft" align="right" valign="top"><a id="a0bb5730513afbd992a42f084649f7b55"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>changePrice</b> (const char symbol, const double number)</td></tr>
+<tr class="separator:a0bb5730513afbd992a42f084649f7b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aed1b93cfd0fbf88a513774690f0b5b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_1_1_video_game.html#a4aed1b93cfd0fbf88a513774690f0b5b">operator==</a> (const <a class="el" href="class_game_1_1_video_game.html">VideoGame</a> &amp;game)</td></tr>
 <tr class="memdesc:a4aed1b93cfd0fbf88a513774690f0b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function checks if release year of 2 games are equal.  <a href="class_game_1_1_video_game.html#a4aed1b93cfd0fbf88a513774690f0b5b">More...</a><br /></td></tr>
 <tr class="separator:a4aed1b93cfd0fbf88a513774690f0b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,6 +165,21 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;=</b> (co
 <tr class="memitem:a9ffd46d252ead2a19644cbe99bdd8af6"><td class="memItemLeft" align="right" valign="top"><a id="a9ffd46d252ead2a19644cbe99bdd8af6"></a>
 <a class="el" href="class_game_1_1_video_game.html">VideoGame</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> (int)</td></tr>
 <tr class="separator:a9ffd46d252ead2a19644cbe99bdd8af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11796afd6511f26aec17d7512cf6819b"><td class="memItemLeft" align="right" valign="top"><a id="a11796afd6511f26aec17d7512cf6819b"></a>
+<a class="el" href="class_game_1_1_video_game.html">VideoGame</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator--</b> ()</td></tr>
+<tr class="separator:a11796afd6511f26aec17d7512cf6819b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f2d0e90bea1a6ae035efb4dc526e9e"><td class="memItemLeft" align="right" valign="top"><a id="a54f2d0e90bea1a6ae035efb4dc526e9e"></a>
+<a class="el" href="class_game_1_1_video_game.html">VideoGame</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator--</b> (int)</td></tr>
+<tr class="separator:a54f2d0e90bea1a6ae035efb4dc526e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd68f9d770f8dd5a39650aa8cc79c69"><td class="memItemLeft" align="right" valign="top"><a id="a9cd68f9d770f8dd5a39650aa8cc79c69"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCopy</b> (const <a class="el" href="class_game_1_1_video_game.html">VideoGame</a> &amp;game)</td></tr>
+<tr class="separator:a9cd68f9d770f8dd5a39650aa8cc79c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae016f1dba1c41a6e60c103f656579d85"><td class="memItemLeft" align="right" valign="top"><a id="ae016f1dba1c41a6e60c103f656579d85"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>getLiveInstances</b> ()</td></tr>
+<tr class="separator:ae016f1dba1c41a6e60c103f656579d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>

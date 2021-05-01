@@ -69,62 +69,73 @@ $(function() {
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define VIDEOGAME_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> std::string;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> std::istream;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> std::ostream;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>Game</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_video_game.html">   16</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_game_1_1_video_game.html">VideoGame</a></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keyword">class </span>InnerVideoGame;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            InnerVideoGame *ptr;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keyword">friend</span> <span class="keyword">class </span>InnerVideoGame;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_game_1_1_video_game.html#a42e5723d8df3fae09b0ef539ac68c286">   27</a></span>&#160;            <a class="code" href="class_game_1_1_video_game.html#a42e5723d8df3fae09b0ef539ac68c286">VideoGame</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="class_game_1_1_video_game.html#a42e5723d8df3fae09b0ef539ac68c286">VideoGame</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; n, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; g, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> rYear, <span class="keywordtype">bool</span> isMultiP);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            ~<a class="code" href="class_game_1_1_video_game.html">VideoGame</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_game_1_1_video_game.html#aff1fd93a658fbffa2f2c44b0e6a71d03">   34</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="class_game_1_1_video_game.html#aff1fd93a658fbffa2f2c44b0e6a71d03">setGame</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; n, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; g, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> rYear, <span class="keywordtype">bool</span> isMultiP);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordtype">void</span> setName(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; nameOfGame);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordtype">void</span> setGenre(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; genreOfGame);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordtype">void</span> setReleaseYear(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> year);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordtype">void</span> setMultiplayer(<span class="keywordtype">bool</span> isOnline);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordtype">void</span> setGameID();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordtype">string</span> getName() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordtype">string</span> getGenre() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> getReleaseYear() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordtype">bool</span> getIsMultiplayer() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> getID() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_game_1_1_video_game.html#aea563a128919a59987d9ca992772adbf">   50</a></span>&#160;            <span class="keywordtype">string</span> <a class="code" href="class_game_1_1_video_game.html#aea563a128919a59987d9ca992772adbf">toString</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_game_1_1_video_game.html#a4aed1b93cfd0fbf88a513774690f0b5b">   57</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="class_game_1_1_video_game.html#a4aed1b93cfd0fbf88a513774690f0b5b">operator ==</a>(<span class="keyword">const</span> <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordtype">bool</span> operator !=(<span class="keyword">const</span> <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordtype">bool</span> operator &lt;(<span class="keyword">const</span> <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordtype">bool</span> operator &lt;=(<span class="keyword">const</span> <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordtype">bool</span> operator &gt;(<span class="keyword">const</span> <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordtype">bool</span> operator &gt;=(<span class="keyword">const</span> <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; operator =(<span class="keyword">const</span> <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; operator++();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <a class="code" href="class_game_1_1_video_game.html">VideoGame</a> operator++(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keyword">friend</span> ostream&amp; operator &lt;&lt;(ostream&amp; output, <span class="keyword">const</span> <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keyword">friend</span> istream&amp; operator &gt;&gt;(istream&amp; input, <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    };</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// VIDEOGAME_H</span></div>
-<div class="ttc" id="aclass_game_1_1_video_game_html"><div class="ttname"><a href="class_game_1_1_video_game.html">Game::VideoGame</a></div><div class="ttdoc">This class stores data about video games. VideoGame consists of these fields: name,...</div><div class="ttdef"><b>Definition:</b> VideoGame.h:17</div></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> std::string;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> std::istream;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using</span> std::ostream;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>Game</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_game_1_1_video_game.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_game_1_1_video_game.html">VideoGame</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keyword">class </span>InnerVideoGame;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            InnerVideoGame *ptr;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keyword">friend</span> <span class="keyword">class </span>InnerVideoGame;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_game_1_1_video_game.html#a42e5723d8df3fae09b0ef539ac68c286">   28</a></span>&#160;            <a class="code" href="class_game_1_1_video_game.html#a42e5723d8df3fae09b0ef539ac68c286">VideoGame</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <a class="code" href="class_game_1_1_video_game.html#a42e5723d8df3fae09b0ef539ac68c286">VideoGame</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; n, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; g, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> rYear, <span class="keywordtype">bool</span> isMultiP, <span class="keywordtype">double</span> price);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <a class="code" href="class_game_1_1_video_game.html#a42e5723d8df3fae09b0ef539ac68c286">VideoGame</a>(<span class="keyword">const</span> <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            ~<a class="code" href="class_game_1_1_video_game.html">VideoGame</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_game_1_1_video_game.html#a5ad3f172c5ad16c07f7904b1e78f0593">   36</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="class_game_1_1_video_game.html#a5ad3f172c5ad16c07f7904b1e78f0593">setGame</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; n, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; g, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> rYear, <span class="keywordtype">bool</span> isMultiP, <span class="keywordtype">double</span> price);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordtype">void</span> setName(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; nameOfGame);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordtype">void</span> setGenre(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; genreOfGame);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordtype">void</span> setReleaseYear(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> year);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordtype">void</span> setMultiplayer(<span class="keywordtype">bool</span> isOnline);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordtype">void</span> setPrice(<span class="keywordtype">double</span> price);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordtype">void</span> setGameID();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordtype">string</span> getName() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordtype">string</span> getGenre() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> getReleaseYear() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordtype">bool</span> getIsMultiplayer() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> getID() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">int</span> getLiveInstances();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordtype">double</span> getPrice() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_game_1_1_video_game.html#aea563a128919a59987d9ca992772adbf">   55</a></span>&#160;            <span class="keywordtype">string</span> <a class="code" href="class_game_1_1_video_game.html#aea563a128919a59987d9ca992772adbf">toString</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordtype">void</span> changePrice(<span class="keyword">const</span> <span class="keywordtype">char</span> symbol, <span class="keyword">const</span> <span class="keywordtype">double</span> number);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_game_1_1_video_game.html#a4aed1b93cfd0fbf88a513774690f0b5b">   64</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="class_game_1_1_video_game.html#a4aed1b93cfd0fbf88a513774690f0b5b">operator ==</a>(<span class="keyword">const</span> <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordtype">bool</span> operator !=(<span class="keyword">const</span> <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordtype">bool</span> operator &lt;(<span class="keyword">const</span> <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordtype">bool</span> operator &lt;=(<span class="keyword">const</span> <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordtype">bool</span> operator &gt;(<span class="keyword">const</span> <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordtype">bool</span> operator &gt;=(<span class="keyword">const</span> <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; operator =(<span class="keyword">const</span> <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; operator++();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="class_game_1_1_video_game.html">VideoGame</a> operator++(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; operator--();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <a class="code" href="class_game_1_1_video_game.html">VideoGame</a> operator--(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordtype">bool</span> isCopy(<span class="keyword">const</span> <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keyword">friend</span> ostream&amp; operator &lt;&lt;(ostream&amp; output, <span class="keyword">const</span> <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keyword">friend</span> istream&amp; operator &gt;&gt;(istream&amp; input, <a class="code" href="class_game_1_1_video_game.html">VideoGame</a>&amp; game);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    };</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// VIDEOGAME_H</span></div>
+<div class="ttc" id="aclass_game_1_1_video_game_html"><div class="ttname"><a href="class_game_1_1_video_game.html">Game::VideoGame</a></div><div class="ttdoc">This class stores data about video games. VideoGame consists of these fields: name,...</div><div class="ttdef"><b>Definition:</b> VideoGame.h:18</div></div>
 <div class="ttc" id="aclass_game_1_1_video_game_html_a42e5723d8df3fae09b0ef539ac68c286"><div class="ttname"><a href="class_game_1_1_video_game.html#a42e5723d8df3fae09b0ef539ac68c286">Game::VideoGame::VideoGame</a></div><div class="ttdeci">VideoGame()</div><div class="ttdoc">Lazy initialization of the VideoGame.</div></div>
 <div class="ttc" id="aclass_game_1_1_video_game_html_a4aed1b93cfd0fbf88a513774690f0b5b"><div class="ttname"><a href="class_game_1_1_video_game.html#a4aed1b93cfd0fbf88a513774690f0b5b">Game::VideoGame::operator==</a></div><div class="ttdeci">bool operator==(const VideoGame &amp;game)</div><div class="ttdoc">This function checks if release year of 2 games are equal.</div></div>
+<div class="ttc" id="aclass_game_1_1_video_game_html_a5ad3f172c5ad16c07f7904b1e78f0593"><div class="ttname"><a href="class_game_1_1_video_game.html#a5ad3f172c5ad16c07f7904b1e78f0593">Game::VideoGame::setGame</a></div><div class="ttdeci">void setGame(const string &amp;n, const string &amp;g, unsigned int rYear, bool isMultiP, double price)</div><div class="ttdoc">This function will set all video game data with given parametres.</div></div>
 <div class="ttc" id="aclass_game_1_1_video_game_html_aea563a128919a59987d9ca992772adbf"><div class="ttname"><a href="class_game_1_1_video_game.html#aea563a128919a59987d9ca992772adbf">Game::VideoGame::toString</a></div><div class="ttdeci">string toString() const</div><div class="ttdoc">This function returns class object data converted into string.</div></div>
-<div class="ttc" id="aclass_game_1_1_video_game_html_aff1fd93a658fbffa2f2c44b0e6a71d03"><div class="ttname"><a href="class_game_1_1_video_game.html#aff1fd93a658fbffa2f2c44b0e6a71d03">Game::VideoGame::setGame</a></div><div class="ttdeci">void setGame(const string &amp;n, const string &amp;g, unsigned int rYear, bool isMultiP)</div><div class="ttdoc">This function will set all video game data with given parametres.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
