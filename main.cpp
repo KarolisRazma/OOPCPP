@@ -12,32 +12,11 @@ int main()
         VideoGame example_1("Lineage II", "MMORPG", 2003, true, 19.99);
         VideoGame example_2;
 
-        //cin >> example_2;
-
         VideoGame example_3("Minecraft", "Sandbox", 2011, true, 9.99);
         VideoGame example_4;
 
         cout << example_1 << endl;
-        //cout << example_2 << endl;
         cout << example_3 << endl;
-
-        stringstream ss;
-        ss << example_1;
-        //cout << ss.str();
-
-        ss >> example_2;
-
-        //cout << example_1.getName() << " " << example_1.getGenre() << " " << example_1.getReleaseYear() << " " << example_1.getIsMultiplayer() << " " << example_1.getID() << " " << endl;
-        //cout << example_2.getName() << " " << example_2.getGenre() << " " << example_2.getReleaseYear() << " " << example_2.getIsMultiplayer() << " " << example_2.getID() << " " << endl;
-        example_1.changePrice('+', -109);
-
-        cout << example_1 << endl;
-        //cout << example_2 << endl;
-        cout << example_3 << endl;
-
-        //cin >> example_4;
-
-        //cout << example_4 << endl;
 
     }
     catch(invalid_argument& error)
